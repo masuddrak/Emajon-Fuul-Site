@@ -1,0 +1,31 @@
+.cards{
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 571px;
+    height: 107;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards button{
+    height: 20px;
+    margin-right:5px ;
+}
+.card-info{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    
+}
+.card-info h5{
+    margin: 2px;
+}
+.card-info p{
+    margin: 0;
+}
+.card-info img{
+    width: 91px;
+    height:91px;
+    margin-right: 5px;
+}
