@@ -1,6 +1,7 @@
 import React from 'react';
 import useCard from '../../Hooks/useCard';
 import useProducts from '../../Hooks/useProducts';
+import { removeFromDb } from '../../utilities/fakedb';
 import Card from '../Card/Card';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import './Order.css'
@@ -10,6 +11,7 @@ const Order = () => {
     const handelRemoveProduct=(product)=>{
         const rest=card.filter(pd=>pd.id !==product.id)
         setCard(rest)
+        removeFromDb(product.id)
     }
     return (
         <div className='shop-container'>
