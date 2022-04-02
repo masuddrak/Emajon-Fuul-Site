@@ -2,7 +2,9 @@ import React from 'react';
 import './RevieItme.css'
 const ReviewItem = (props) => {
     console.log(props.product)
+    const {product,handelRemoveProduct}=props
     const {name,img,price,quantity,shipping}=props.product
+    
     return (
         <div className='cards'>
             <div className='card-info'>
@@ -14,7 +16,7 @@ const ReviewItem = (props) => {
                     <p>Shipping:{shipping}</p>
                 </div>
             </div>
-            <button>Delet</button>
+            <button onClick={()=>handelRemoveProduct(product)}>Delet</button>
         </div>
     );
 };

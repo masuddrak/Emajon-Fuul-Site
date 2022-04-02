@@ -7,6 +7,10 @@ import './Order.css'
 const Order = () => {
     const [products,setProducts]=useProducts()
     const [card,setCard]=useCard(products)
+    const handelRemoveProduct=(product)=>{
+        const rest=card.filter(pd=>pd.id !==product.id)
+        setCard(rest)
+    }
     return (
         <div className='shop-container'>
             <div className="products-card-container">
@@ -14,6 +18,7 @@ const Order = () => {
                     card.map(product=><ReviewItem
                         key={product.id}
                         product={product}
+                        handelRemoveProduct={handelRemoveProduct}
                     ></ReviewItem>)
                 }
             </div>
