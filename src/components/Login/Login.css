@@ -1,0 +1,52 @@
+.form-containe{
+    margin: 0 auto;
+    border: 1px solid orange;
+    width: 400px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.form-title{
+   text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    opacity: 0.7;
+}
+.form-label{
+    display: flex;
+    justify-content: center;
+}
+.input-grup label{
+    display: block;
+}
+
+.input-grup input{
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(201, 190, 172);
+    margin-bottom: 10px;
+    outline: none;
+}
+.submit{
+    background-color: rgb(161, 121, 51);
+}
+hr{
+    display: inline;
+}
+.google-signin{
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border:1px solid orange;
+    justify-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+.google-signin img{
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
