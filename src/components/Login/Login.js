@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css'
 const Login = () => {
+    const [email,setEmail]=useState('')
+    const [password,setPassword]=useState('')
+    const [confirmPassword,setConfirmPassword]=useState('')
+    const [error,setError]=useState('')
     return (
         <div className='form-containe'>
             <h2 className='form-title'>LogIn</h2>
@@ -10,11 +14,11 @@ const Login = () => {
                 <form >
                     <div className="input-grup">
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email" id="" />
+                        <input type="email" name="email" id="" required/>
                     </div>
                     <div className="input-grup">
                         <label htmlFor="password">Password</label>
-                        <input type="password" name="password" id="" />
+                        <input type="password" name="password" id="" required/>
                     </div>
                     <div className="input-grup">
                         <input className='submit' type="submit" value="Submit" />
