@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Card.css'
 const Card = (props) => {
     const {card}=props
@@ -22,6 +23,7 @@ const Card = (props) => {
             <p>Tex:${tex.toFixed(2)}</p>
             <p>Grand Total:${grandTotal.toFixed(2)}</p>
             {props.children}
+            <Link to='/shipping'>Shippin Now</Link>
         </div>
     );
 };
